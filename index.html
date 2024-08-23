@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <img class="logo" src="Imagenes/Logo.svg" alt="logo">
+    </header>
+    <main>
+        <section class="input-section">
+            <textarea id="input-text" placeholder="Ingrese el texto aquí"></textarea>
+              <div class="alerta">
+                <img src="Imagenes/alerta.svg" alt="alerta">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="buttons">
+                <button id="encrypt-btn">Encriptar</button>
+                <button id="decrypt-btn">Desencriptar</button>
+            </div>
+          
+        </section>
+        <section class="output-section">
+            <div id="output-container">
+                <img src="Imagenes/Muñeco.svg"alt="Imagen de estado inactivo" id="inactive-image">
+                <textarea id="output-text" readonly></textarea>
+             </div>
+             <div id = "inactive-p">
+                <h3>Nigún mensaje fue <br> encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o <br> desencriptar.</p>
+            </div>
+            <div class="copy-buttons">   
+            <button id="copy-btn">Copiar</button>
+            <p></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Desarrollado por Oscar Daniel Martínez Vargas</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
